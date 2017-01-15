@@ -1,14 +1,16 @@
 <html>
-  <!-- [START csslink] -->
+
   <head>
+    <title>Message Gen - glorious flowers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
     <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
     <link rel="apple-touch-icon" href="https://instagram.fhkg1-1.fna.fbcdn.net/t51.2885-19/s320x320/12724935_1037070149698001_2086130098_a.jpg" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
-
-
   </head>
-  <!-- [END csslink] -->
+
   <body>
+  <h1>Payment Message Generator</h1>
     <?php
 
     $date1 = new DateTime("2017-01-15");
