@@ -20,15 +20,19 @@
     $date2->add(new DateInterval('P18D'));
 
     $dateRngStr = $date1->format('Y-m-d')." 至 ".$date2->format('Y-m-d');
-    $msg = htmlspecialchars("謝謝你！製作完成後將會收到通知。<br />14-18日後會寄出 (".
-    $dateRngStr .")");
+    $msg = "謝謝你！製作完成後將會收到通知。<br />14-18日後會寄出 (". $dateRngStr .")";
 
     echo $msg;
     ?>
-<br />
-    <!-- Trigger -->
-    <button class="btn" data-clipboard-text="<?php echo $msg; ?>">
-        Copy to clipboard
-    </button>
-  </body>
+        <br />
+
+        <textarea id="bar">
+        <?php echo $msg; ?>
+        </textarea>
+
+        <!-- Trigger -->
+        <button class="btn" data-clipboard-action="cut" data-clipboard-target="#bar">
+         Cut to clipboard
+        </button>
+    </body>
 </html>
