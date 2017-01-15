@@ -1,7 +1,7 @@
 <html>
 
   <head>
-    <title>Message Gen - glorious flowers</title>
+    <title>Msg Gen</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
     <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
@@ -10,7 +10,7 @@
   </head>
 
   <body>
-  <h1>Payment Message Generator</h1>
+  <h1>After-paid Message Generator</h1>
     <?php
 
     $date1 = new DateTime("2017-01-15");
@@ -20,15 +20,13 @@
     $date2->add(new DateInterval('P18D'));
 
     $dateRngStr = $date1->format('Y-m-d')." 至 ".$date2->format('Y-m-d');
-    $msg = "謝謝你！製作完成後將會收到通知。\n14-18日後會寄出 (". $dateRngStr .")";
+    $msg = "謝謝你！製作完成後將會收到通知。14-18日後會寄出 (即". $dateRngStr .")";
 
     echo $msg;
     ?>
         <br />
 
-        <textarea id="bar">
-        <?php echo $msg; ?>
-        </textarea>
+        <textarea id="bar"><?php echo $msg; ?></textarea>
 
         <!-- Trigger -->
         <button class="btn" data-clipboard-action="cut" data-clipboard-target="#bar">
