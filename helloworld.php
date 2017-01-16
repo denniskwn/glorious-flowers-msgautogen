@@ -13,8 +13,11 @@
   <h1>After-paid Message Generator</h1>
     <?php
 
-    $date1 = new DateTime("2017-01-15");
-    $date2 = new DateTime("2017-01-15");
+    //$date1 = new DateTime("2017-01-15");
+    //$date2 = new DateTime("2017-01-15");
+
+    $date1 = new DateTime();
+    $date2 = new DateTime();
 
     $date1->add(new DateInterval('P14D'));
     $date2->add(new DateInterval('P18D'));
