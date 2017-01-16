@@ -12,7 +12,6 @@
   <body>
   <h1>After-paid Message Generator</h1>
     <?php
-
     //$date1 = new DateTime("2017-01-15");
     //$date2 = new DateTime("2017-01-15");
 
