@@ -15,7 +15,7 @@
     //$date1 = new DateTime("2017-01-15");
     //$date2 = new DateTime("2017-01-15");
 
-date_default_timezone_set('Asia/Hong_Kong');
+    date_default_timezone_set('Asia/Hong_Kong');
     $date1 = new DateTime();
     $date2 = new DateTime();
 
